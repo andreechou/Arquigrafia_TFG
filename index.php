@@ -66,7 +66,7 @@
 					</div>
 					<div class="col-md-5">
 						<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-						<time>Criado em 12 de agosto de 2001</time>
+						<time>Criado em <?php the_time('j \d\e F \d\e Y'); ?></time>
 						<div class="row">
 							<div class="col-md-10">
 								<p><?php the_excerpt(); ?></p>
@@ -81,7 +81,7 @@
 				<div class="row post">
 					<div class="col-md-3 col-md-offset-1">
 						<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-						<time>Criado em 27 de janeiro de 1962</time>
+						<time>Criado em <?php the_time('j \d\e F \d\e Y'); ?></time>
 						<p><?php the_excerpt(); ?></p>
 					</div>
 					<div class="col-md-8">
@@ -104,7 +104,7 @@
 					</div>
 					<div class="col-md-7">
 						<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-						<time>Criado em 27 de janeiro de 1962</time>
+						<time>Criado em <?php the_time('j \d\e F \d\e Y'); ?></time>
 						<p><?php the_excerpt(); ?></p>
 					</div>
 				</div>
