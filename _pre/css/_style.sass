@@ -1,0 +1,138 @@
+// Utilities
+.rot-90
+	/* rotate -90 deg, not sure if a negative number is supported so I used 270 */
+	-moz-transform: rotate(90deg)
+	-moz-transform-origin: 50% 50%
+	-webkit-transform: rotate(90deg)
+	-webkit-transform-origin: 50% 50%
+	-o-transform: rotate(90deg)
+	-o-transform-origin: 50% 50%
+	transform: rotate(90deg)
+	transform-origin: 50% 50%
+
+	/* IE<9 */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1)
+@media (max-width: $screen-sm-max)
+	.rot-90
+		-moz-transform: rotate(0)
+		-moz-transform-origin: initial
+		-webkit-transform: rotate(0)
+		-webkit-transform-origin: initial
+		-o-transform: rotate(0)
+		-o-transform-origin: initial
+		transform: rotate(0)
+		transform-origin: initial
+		filter: none
+
+// Assets
+body
+	font-family: $text-font
+	color: #000
+
+h1, h2, h3, h4, h5, h6
+	font-family: "Roboto", sans-serif
+	text-transform: uppercase
+	font-weight: 500 //Medium
+	letter-spacing: -.5px
+
+p
+	font-family: "Martel", serif
+	line-height: 1.68
+
+time
+	font-family: "Roboto", sans-serif
+	font-style: italic
+	font-weight: 300
+	display: inline-block
+	margin-bottom: 1em
+
+h1 a
+	color: #000
+	&:hover
+		color: #000
+
+// Page
+
+header
+	.btn-menu
+		+size(60px)
+		background-color: $dark
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 100
+		img
+			width: 30px
+			margin: 11px 15px 4px
+	.menu
+		font-family: $title-font
+		+transition(all 0.5s ease-in-out)
+		position: fixed
+		height: 100%
+		width: 280px
+		top: 0
+		left: -310px
+		padding-right: 30px
+		z-index: 90
+
+		background-color: rgba(0, 0, 0, 0.8)
+		font-size: 1.8rem
+		text-align: right
+		
+		a
+			font-weight: bold
+			text-transform: uppercase
+			color: $light
+
+		nav.top
+			margin-left: 80px
+			margin-top: 90px
+			border-bottom: 4px solid $light
+
+		nav.bottom
+			margin-left: 80px
+			margin-top: 360px
+			padding-top: 20px
+			border-top: 4px solid $light
+
+	.menu.is-active
+		left: 0
+
+#intro
+	height: 110vh
+	.g-me, .g-project
+		margin-top: 20vh
+		h1
+			margin-bottom: .5em
+		.logo
+			margin-bottom: 1.5em
+@media screen and (max-height: 670px)
+	#intro
+		height: 120vh
+		.g-me, .g-project
+			margin-top: 5vh
+@media (max-width: $screen-sm-max)
+	#intro
+		height: auto
+
+#blog
+	.post
+		margin-bottom: 4em
+		figure img
+			width: 100%
+			height: auto
+		h1
+			margin-top: -7px
+			margin-bottom: .1em
+
+.post-single
+	figure
+		height: 80vh
+	article
+		margin-top: 2em
+		.content
+			margin-top: 2em
+			img
+				width: 100%
+				height: auto
+				margin: 1em 0
