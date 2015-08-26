@@ -16,20 +16,4 @@
 </head>
 <body <?php body_class( $class ); ?>>
 
-<header>
-  <div class="btn-menu"><img src="assets/img/i-menulogo.svg" alt=""></div>
-  <div class="menu">
-    <nav class="top">
-      <ul class="is-unstyled">
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Crie sua conta</a></li>
-      </ul>
-    </nav>
-    <nav class="bottom">
-      <ul class="is-unstyled">
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<?php include(TEMPLATEPATH . '/menu.php'); ?>

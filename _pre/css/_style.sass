@@ -24,6 +24,9 @@
 		transform-origin: initial
 		filter: none
 
+.padding-0
+	padding: 0
+
 // Assets
 body
 	font-family: $text-font
@@ -36,11 +39,14 @@ h1, h2, h3, h4, h5, h6
 	letter-spacing: -.5px
 
 p
-	font-family: "Martel", serif
+	font-family: $text-font
 	line-height: 1.68
 
+p.martel
+	font-family: "Martel", serif
+
 time
-	font-family: "Roboto", sans-serif
+	font-family: $text-font
 	font-style: italic
 	font-weight: 300
 	display: inline-block
@@ -95,6 +101,10 @@ header
 			padding-top: 20px
 			border-top: 4px solid $light
 
+		ul
+			padding-left: 0
+			list-style: none
+
 	.menu.is-active
 		left: 0
 
@@ -126,13 +136,13 @@ header
 			margin-bottom: .1em
 
 .post-single
-	figure
-		height: 80vh
+	figure.header
+		height: 360px
 	article
 		margin-top: 2em
 		.content
 			margin-top: 2em
-			img
+			img.size-large
 				width: 100%
 				height: auto
 				margin: 1em 0

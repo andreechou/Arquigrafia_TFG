@@ -60,8 +60,7 @@
 				<div class="row post">
 					<div class="col-md-6 col-md-offset-1">
 						<figure>
-							<!-- <img src="<?php bloginfo("template_url"); ?>/assets/img/img-3.jpg" alt=""> -->
-							<?php the_post_thumbnail('large');  ?>
+							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large');  ?></a>
 						</figure>
 					</div>
 					<div class="col-md-5">
@@ -86,8 +85,7 @@
 					</div>
 					<div class="col-md-8">
 						<figure>
-							<!-- <img src="<?php bloginfo("template_url"); ?>/assets/img/img-2.jpg" alt=""> -->
-							<?php the_post_thumbnail('large');  ?>
+							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large');  ?></a>
 						</figure>
 					</div>
 				</div>
@@ -98,8 +96,7 @@
 				<div class="row post">
 					<div class="col-md-4 col-md-offset-1">
 						<figure>
-							<!-- <img src="<?php bloginfo("template_url"); ?>/assets/img/img-4.jpg" alt=""> -->
-							<?php the_post_thumbnail('large');  ?>
+							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large');  ?></a>
 						</figure>
 					</div>
 					<div class="col-md-7">
